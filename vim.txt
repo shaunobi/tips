@@ -1,0 +1,92 @@
+VIM TIPS
+
+Use u to undo a command, use Ctrl-r to redo
+
+Use ( and ) to go back and forward by one sentence
+
+Use ctrl-e to scroll up, and ctrl-y to scroll down. Preserves cursor location
+
+Use zz to center screen on cursor,
+	zt to put cursor to top of screen, shifting text,
+	and zb to put at bottom.
+
+It's common for me to hit q: instead of :q because I think I'm in : mode
+	Hit ctrl-c to exit command history
+
+QUESTION: How do I search and navigate in :h help? (already know ctrl-], ctrl-t)
+
+QUESTION: How do I "move cursor to next paragraph"?
+
+Use :set hls (hlsearch) to turn on highlighted search
+	Turn back off with :unset hls
+	To disable highlighting until another search is made, use :noh (nohlsearch)
+
+When doing a search, you can highlight a subset of that search using \zs and \ze
+	So, start with a general search for overall term, then pull out a subsection
+	using \zs and \ze. Keep hlsearch on to see the results - cool!
+
+In normal mode (or visual - see Practical Vim pg 217) use * to find word
+	This will look at the word under the cursor and create a new search using it
+
+Use g& to repeat the last substitute against the entire file
+	This will use the latest search pattern
+
+Use gv to re-highlight the last visual selection
+
+Use vi{ when inside a { } block to do a VISUAL selection of everything inside
+
+Use :sort to sort everything. Try making a visual selection first to limit sort
+
+Use ctrl-] to jump to a definition (need updated ctags). Ctrl-t goes back
+	Note that this also works in Help files; useful when you ctrl-t by accident
+
+Use :jumps to view the "jump list". Use ctrl-o to "go back" in the list
+
+Create a new window with ctrl-w n
+
+Move between windows with ctrl-w j and k
+
+For quickfix list, all commands are prepended with c*
+
+Use copen to create a new window with all quickfix entries
+
+Use :vimgrep /searchtext/g *.file_ext to add items to the quickfix. Then :cn
+
+Use ctrl-n and ctrl-p to get keyword autocompletion in INSERT mode
+	ctrl-x ctrl-n for current buffer keywords
+	ctrl-x ctrl-] for tags completion
+	ctrl-x ctrl-k for dictionary completion
+	ctrl-x ctrl-o for "omni completion"
+
+Use ctrl-y to "yank" the letter from the line above
+
+When typing in repetitive lines, use ctrl-x ctrl-l to auto-complete entire lines
+	Useful for things like CSS file editing, etc.
+
+To CONTINUE through auto-complete entries, hit ctrl-x ctrl-n multiple times
+	Very useful with things like html tags
+	Remember that you can hit ctrl-n to get next instead of ctrl-x ctrl-n
+	Useful when picking a different "branch" of autocompletion
+
+Use yi{ or yi} to grab everything within curly braces. Works for ( and [ too
+
+Use =i} to reindent text within curlies
+	Use >> to indent single line
+	Use == to fix indentation on single line
+
+Use :set spell to turn on spelling highlighting
+	Doesn't work "right" with certain filetypes, can use :set filetype= if so
+	[s and ]s move between spelling errors
+	z= suggests auto-correct, zg adds word to dictionary, zw removes word
+	zug reverts the last zg or zw commands
+
+Use s to replace selection (or current character) and enter INSERT mode
+
+In INSERT mode, use ctrl-x,s to scan back to last misspelled word and fix
+	Same as using z=
+	ctrl-x ctrl-s would be better, but ctrl-s is "stop", requiring ctrl-q
+
+List buffers using :ls, :bn to go to next buffer, :bp to go to previous
+	2buf to go to second buffer, ctrl-^ to switch two most recent buffers
+	In :ls, # = "most recent other buffer", a = "active", + = "modified"
+

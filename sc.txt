@@ -1,0 +1,20 @@
+SC TIPS
+
+Change col width - press f, the use h and l to change width
+	can also use f then j or k to adjust decimal precision
+	can use f then 0-9 to set a predefined numeric format
+	can use = to define a numeric format from scratch
+
+Use < to enter a left-justified string
+Use > to enter a right-justified string
+Use \ to enter a centered string
+
+To enter a number, press =123
+
+To write to file, P (with shift held down)
+
+Use dr to delete a row
+Use dc to delete a column
+
+exit with q or Q
+

@@ -1,0 +1,22 @@
+C-a       Go to beginning of line. When using Screen, use C-a, a instead
+C-e       Go to end of line
+C-f       Move one char forward
+C-b       Move one char back
+C-_       Undo! (and, this is Ctrl Shift, since it's the _ char)
+C-x, C-e  Edit command in Vim! (well, $EDITOR)
+C-d       Delete character under cursor
+C-h       Same as backspace
+C-k       Cut the line after cursor to clipboard
+C-u       Cut the line before cursor to clipboard
+C-w       Cut word before cursor to clipboard
+C-y       Paste!
+C-l       Clear entire screen
+C-z       Suspend current process (us fg to restore)
+C-c       Send SIGINT to kill current process
+C-d       Exit current shell
+C-r       History search
+C-g       Exit history search
+C-p       See previous command in history
+C-n       See next command in history
+
+BONUS: Enter, ~, .	Exit a stalled SSH session
