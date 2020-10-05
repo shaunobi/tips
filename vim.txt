@@ -17,6 +17,9 @@ QUESTION: How do I search and navigate in :h help? (already know ctrl-], ctrl-t)
 
 QUESTION: How do I "move cursor to next paragraph"?
 
+In INSERT mode, use ctrl-o plus a NORMAL mode command to do one command
+	Useful when I want to go back a word or sentence, etc.
+
 Use :set hls (hlsearch) to turn on highlighted search
 	Turn back off with :unset hls
 	To disable highlighting until another search is made, use :noh (nohlsearch)
