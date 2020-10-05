@@ -1,0 +1,23 @@
+Use `git checkout 1234567` to go back to a previous snapshot
+
+Use `git revert 1234567` to "undo" the named commit
+	Note that this is safe - it creates a NEW revision with the changes UNDONE
+	So, history after would be: Create index.html, Revert "Create index.html"
+
+Use `git checkout master` to go back to the master branch
+
+Use `git log --online` and `git status` to see history and status
+
+Use `git tab -a v1.x -m "message"` to create an annotated tag
+
+Use `git checkout v1.x` to chack out a tagged snapshot (often a release)
+
+I like to use `alias c=clear` so I can say `c;git status` on the terminal
+
+To clean out changes to tracked files: `git reset --hard`
+	Important: this will ONLY get rid of changes to tracked files, not untracked
+	To get rid of untracked files: `git clean -f`
+	Very important to be careful with these two commands
+	They operate on the working directory, not committed snapshots
+
+
