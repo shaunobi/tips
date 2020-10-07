@@ -20,4 +20,7 @@ To clean out changes to tracked files: `git reset --hard`
 	Very important to be careful with these two commands
 	They operate on the working directory, not committed snapshots
 
+Use `git branch -d branch_name` to clean up branches
+	This is usually done after a branch is merged, but can be done to just delete
+	If deleting an unmerged branch, you'll get a warning with instructions; safe
 
