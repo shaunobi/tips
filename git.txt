@@ -24,3 +24,38 @@ Use `git branch -d branch_name` to clean up branches
 	This is usually done after a branch is merged, but can be done to just delete
 	If deleting an unmerged branch, you'll get a warning with instructions; safe
 
+Use `git rebase master` to rebase your current branch off the tip of master
+	Use `git rebase -i branchname` to do this interactively
+	During interactive rebasing, you can fix commits, squash them, etc.
+
+Use `git commit --amend` to add staged changes to last commit, not make new one
+
+Use `git rebase --continue` to continue a rebase after amending a commit
+
+Use `git rebase --abort` to abandon rebase and return to previous repo state
+	This is your "panic button"
+
+Use `git merge --no-ff branchename` to do a manual merge and NOT fast-forward
+
+You can duplicate a multi-line selection quickly
+	Use `shift-V` to do a multi-line VISUAL selection
+	`y` to yank. At this point you are back at the top of the selection
+	Use `'>` to go to the end of the most recent VISUAL selection - this is key!
+	Use `p` to paste after the line you're on. Done, lines duped!
+
+You can use `ggyG` to yank contents of a file
+	When pasting into new file, the problem is that there will be an extra line
+	For example, a simple `y` will past AFTER the "invisible" line in a new file
+	So, use `shift-V` to select a single line, THEN use `p`. No extra line!
+
+Use `git reflog` to show chronological history of the repo
+
+Use `git reset --mixed HEAD~1` to move HEAD back 1 commit (could use other num)
+	Will leave working directory alone (useful for things like splitting commits)
+
+git reset --hard HEAD~1 moves HEAD back 1 commit, changes working dir
+
+git log <since>..<until> displays commits reachable from <until> but not <since>
+
+git log --stat shows extra information about altered files
+
