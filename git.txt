@@ -71,5 +71,8 @@ git branch -r to list remote branches
 
 git push <remote-name> <branch-name> to push remote
 	So, commonly: git push origin master
-	or: git push origin
+	Or: git push as a shorthand
+
+git push <remote-name> <tag-name> to push a tag to another repo
+	Interestingly, tags are NOT pushed by default
 
