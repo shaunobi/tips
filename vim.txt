@@ -90,6 +90,7 @@ In INSERT mode, use ctrl-x,s to scan back to last misspelled word and fix
 List buffers using :ls, :bn to go to next buffer, :bp to go to previous
 	2buf to go to second buffer, ctrl-^ to switch two most recent buffers
 	In :ls, # = "most recent other buffer", a = "active", + = "modified"
+	Use :enew to create new empty buffer. Note that it won't do so twice
 
 git branch lists all branches
 	git branch mybranch creates a new branch

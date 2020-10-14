@@ -59,3 +59,17 @@ git log <since>..<until> displays commits reachable from <until> but not <since>
 
 git log --stat shows extra information about altered files
 
+git clone ../other-repo will clone another repo. Can obvs be over SSH as well
+
+git remote add <remote-name> <path> will add new a remote
+
+git fetch <remote-name> will pull down remote branch info, but not merge
+
+git merge remote-repo/remote-branch to merge remote branch -> checked out branch
+
+git branch -r to list remote branches
+
+git push <remote-name> <branch-name> to push remote
+	So, commonly: git push origin master
+	or: git push origin
+
