@@ -15,8 +15,6 @@ It's common for me to hit q: instead of :q because I think I'm in : mode
 
 QUESTION: How do I search and navigate in :h help? (already know ctrl-], ctrl-t)
 
-QUESTION: How do I "move cursor to next paragraph"?
-
 In INSERT mode, use ctrl-o plus a NORMAL mode command to do one command
 	Useful when I want to go back a word or sentence, etc.
 
@@ -103,4 +101,11 @@ Use git rm myfile.txt to get rid of a file
 	Remember renaming files happens outside git; use mv myold.txt to mynew.txt
 	You'll have to git add mynew.txt in order to track the renamed file
 	Git will figure out that it's the SAME file, just renamed. Cool!
+
+When editing HTML
+	Use `cit` to "change in tag". Can be used when cursor on a tag instead of in
+	Use % to find matching tag - very useful, though seems like it's buggy?
+
+use `cc` to change entire line, `C` to change to end of line
+
 
