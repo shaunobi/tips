@@ -76,3 +76,7 @@ git push <remote-name> <branch-name> to push remote
 git push <remote-name> <tag-name> to push a tag to another repo
 	Interestingly, tags are NOT pushed by default
 
+Interesting note: github.com/shaunobi/myrepo.git is a folder
+	I thought the .git was a FILENAME, but it's the folder name convention
+	When you git init --bare, you need a way to "know" it's a git folder
+
