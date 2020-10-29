@@ -109,6 +109,23 @@ When editing HTML
 
 use `cc` to change entire line, `C` to change to end of line
 
+You can duplicate a multi-line selection quickly
+	Use `shift-V` to do a multi-line VISUAL selection
+	`y` to yank. At this point you are back at the top of the selection
+	Use `'>` to go to the end of the most recent VISUAL selection - this is key!
+	Use `p` to paste after the line you're on. Done, lines duped!
+
+You can use `ggyG` to yank contents of a file
+	When pasting into new file, the problem is that there will be an extra line
+	For example, a simple `y` will past AFTER the "invisible" line in a new file
+	So, use `shift-V` to select a single line, THEN use `p`. No extra line!
+
+Use :r to insert contents of file at cursor
+	Can also use :0r to insert above
+	Can also start sequence with `shift-V` in order to replace single line
+	So, `shift-V`:r file.ext would start buffer with contents of that file
+	If you're wondering what file to insert, use :!ls to see directory listing
+
 use q: for "Commands" Command Line buffer, and q/ for the search version
 	Common for me to hit q: instead of :q
 	this is annoying, but I can easily get out via :q (to close the CL buffer)

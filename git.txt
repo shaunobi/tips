@@ -35,18 +35,7 @@ Use `git rebase --continue` to continue a rebase after amending a commit
 Use `git rebase --abort` to abandon rebase and return to previous repo state
 	This is your "panic button"
 
-Use `git merge --no-ff branchename` to do a manual merge and NOT fast-forward
-
-You can duplicate a multi-line selection quickly
-	Use `shift-V` to do a multi-line VISUAL selection
-	`y` to yank. At this point you are back at the top of the selection
-	Use `'>` to go to the end of the most recent VISUAL selection - this is key!
-	Use `p` to paste after the line you're on. Done, lines duped!
-
-You can use `ggyG` to yank contents of a file
-	When pasting into new file, the problem is that there will be an extra line
-	For example, a simple `y` will past AFTER the "invisible" line in a new file
-	So, use `shift-V` to select a single line, THEN use `p`. No extra line!
+Use `git merge --no-ff branchname` to do a manual merge and NOT fast-forward
 
 Use `git reflog` to show chronological history of the repo
 
