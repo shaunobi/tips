@@ -10,7 +10,7 @@ Use `git log --online` and `git status` to see history and status
 
 Use `git tab -a v1.x -m "message"` to create an annotated tag
 
-Use `git checkout v1.x` to chack out a tagged snapshot (often a release)
+Use `git checkout v1.x` to checkout out a tagged snapshot (often a release)
 
 I like to use `alias c=clear` so I can say `c;git status` on the terminal
 
@@ -79,4 +79,14 @@ git push <remote-name> <tag-name> to push a tag to another repo
 Interesting note: github.com/shaunobi/myrepo.git is a folder
 	I thought the .git was a FILENAME, but it's the folder name convention
 	When you git init --bare, you need a way to "know" it's a git folder
+
+Use `git checkout -b branch-name` to create a branch and check it out
+
+Important rule: NEVER rebase commits that have been pushed to a shared repo!
+	Instead, use `git revert` to make a NEW commit with the changes
+
+Very typical ways to check for "changes not in my master" and vice-versa:
+	git log master..origin/master --stat (changes in origin/master not in master)
+	git log origin/master..origin --stat (changes in master not in origin/master)
+	Extremely useful commands after a git fetch origin
 
