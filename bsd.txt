@@ -1,0 +1,4 @@
+To search for a wireless network, use `sudo ifconfig up scan`
+	to restart networking, use `sudo service netif restart`
+
+
