@@ -91,6 +91,7 @@ List buffers using :ls, :bn to go to next buffer, :bp to go to previous
 	2buf to go to second buffer, ctrl-^ to switch two most recent buffers
 	In :ls, # = "most recent other buffer", a = "active", + = "modified"
 	Use :enew to create new empty buffer. Note that it won't do so twice
+	Use :bd for "buffer unload", to close just current buffer
 
 git branch lists all branches
 	git branch mybranch creates a new branch
