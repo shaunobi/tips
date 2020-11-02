@@ -79,3 +79,8 @@ Very typical ways to check for "changes not in my master" and vice-versa:
 	git log origin/master..origin --stat (changes in master not in origin/master)
 	Extremely useful commands after a git fetch origin
 
+Use `git format-patch master` to create a .patch file
+	Note that you need to be on the feature-branch, and state the target branch
+	On other end, apply using `git am < 0001-Feature.patch`
+	Once done, you can clear patch files out using `git clean -f`
+
