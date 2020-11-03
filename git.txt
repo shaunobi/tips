@@ -79,6 +79,12 @@ Very typical ways to check for "changes not in my master" and vice-versa:
 	git log origin/master..origin --stat (changes in master not in origin/master)
 	Extremely useful commands after a git fetch origin
 
+If you want to see a diff, you can easily use git diff <old>..<new>.  Examples:
+	git diff master..craigb/new-feature
+	git diff HEAD~2..HEAD~1
+	git diff HEAD^^..HEAD^
+	git diff (to see unstaged changes)
+
 Use `git format-patch master` to create a .patch file
 	Note that you need to be on the feature-branch, and state the target branch
 	On other end, apply using `git am < 0001-Feature.patch`
