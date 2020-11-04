@@ -1,0 +1,4 @@
+Sometimes an app will freeze within a window
+	Use `ctrl-a :kill` to, uh, unfreeze it :)
+
+
