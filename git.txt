@@ -85,6 +85,9 @@ If you want to see a diff, you can easily use git diff <old>..<new>.  Examples:
 	git diff HEAD^^..HEAD^
 	git diff (to see unstaged changes)
 
+If you want to diff unstaged changes against the index, use `git diff`
+	To see changes between unstaged and last commit, use `git diff --cached`
+
 Use `git format-patch master` to create a .patch file
 	Note that you need to be on the feature-branch, and state the target branch
 	On other end, apply using `git am < 0001-Feature.patch`
