@@ -93,3 +93,9 @@ Use `git format-patch master` to create a .patch file
 	On other end, apply using `git am < 0001-Feature.patch`
 	Once done, you can clear patch files out using `git clean -f`
 
+Use `git reset blue.html` to "unstage" a change to blue.html
+	This makes staging match the most recent commit
+
+Use `git restore blue.html` to discard changes in working file
+
+
