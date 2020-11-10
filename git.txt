@@ -98,4 +98,16 @@ Use `git reset blue.html` to "unstage" a change to blue.html
 
 Use `git restore blue.html` to discard changes in working file
 
+Use `git checkout blue.html` to reset blue.html to HEAD
+	Is this the same as git restore?
+
+Quick ref: `git archive` to create zip, `git bundle` to export with history
+	`git clone repo.bundle` to unpack a bundle
+	`git stash` to wipe changes, `git stash apply` to bring them back
+
+`git diff` for diff between working dir and staging
+	`git diff --cached` for diff between staging and most recent commit
+
+`git reset HEAD file.txt` to unstage file, but not alter working dir
+	`git checkout 1e87f7 file.txt` to recent individual file to a commit
 

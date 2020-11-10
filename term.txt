@@ -1,0 +1,7 @@
+To reset your terminal:
+	First, search "Linux keyboard and console HOWTO: Resetting your terminal"
+	Try ctrl-l
+	Try `reset`
+	Try `echo -e \\033c`
+	...read article above for more
+
