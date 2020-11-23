@@ -58,6 +58,17 @@ git merge remote-repo/remote-branch to merge remote branch -> checked out branch
 
 git branch -r to list remote branches
 
+git branch lists all branches
+	git branch mybranch creates a new branch
+	then you have to git checkout mybranch cause it won't do so automatically
+	Switch to the branch to merge INTO (eg master) and run git merge mybranch
+	Once done merging, safely delete the old branch with git branch -d mybranch
+
+Use git rm myfile.txt to get rid of a file
+	Remember renaming files happens outside git; use mv myold.txt to mynew.txt
+	You'll have to git add mynew.txt in order to track the renamed file
+	Git will figure out that it's the SAME file, just renamed. Cool!
+
 git push <remote-name> <branch-name> to push remote
 	So, commonly: git push origin master
 	Or: git push as a shorthand

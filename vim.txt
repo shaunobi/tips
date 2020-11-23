@@ -29,6 +29,10 @@ When doing a search, you can highlight a subset of that search using \zs and \ze
 In normal mode (or visual - see Practical Vim pg 217) use * to find word
 	This will look at the word under the cursor and create a new search using it
 
+Use `:%s/search/replace/g` to search and replace text
+	the /g on the end means "global" (otherwise only operates on first line)
+	you can also use the most recent search: :%s//replace/g
+
 Use g& to repeat the last substitute against the entire file
 	This will use the latest search pattern
 
@@ -93,17 +97,6 @@ List buffers using :ls, :bn to go to next buffer, :bp to go to previous
 	Use :enew to create new empty buffer. Note that it won't do so twice
 	Use :bd for "buffer unload", to close just current buffer
 
-git branch lists all branches
-	git branch mybranch creates a new branch
-	then you have to git checkout mybranch cause it won't do so automatically
-	Switch to the branch to merge INTO (eg master) and run git merge mybranch
-	Once done merging, safely delete the old branch with git branch -d mybranch
-
-Use git rm myfile.txt to get rid of a file
-	Remember renaming files happens outside git; use mv myold.txt to mynew.txt
-	You'll have to git add mynew.txt in order to track the renamed file
-	Git will figure out that it's the SAME file, just renamed. Cool!
-
 When editing HTML
 	Use `cit` to "change in tag". Can be used when cursor on a tag instead of in
 	Use % to find matching tag - very useful, though seems like it's buggy?
@@ -124,7 +117,7 @@ You can use `ggyG` to yank contents of a file
 Use :r to insert contents of file at cursor
 	Can also use :0r to insert above
 	Can also start sequence with `shift-V` in order to replace single line
-	So, `shift-V`:r file.ext would start buffer with contents of that file
+	So, `shift-V:r file.ext` would start buffer with contents of that file
 	If you're wondering what file to insert, use :!ls to see directory listing
 
 use q: for "Commands" Command Line buffer, and q/ for the search version
