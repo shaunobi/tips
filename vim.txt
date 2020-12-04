@@ -124,3 +124,10 @@ use q: for "Commands" Command Line buffer, and q/ for the search version
 	Common for me to hit q: instead of :q
 	this is annoying, but I can easily get out via :q (to close the CL buffer)
 	Can also close the Command Line buffer using Ctrl-w q
+
+To easily copy text, use ex mode. Start with `set number`
+	Then, use `:2,4t.` to copy lines 2 to 4 to the current line
+	Can also use `:2,4m.` to move lines instead of copying
+	Very useful when re-arranging lists, editing code, etc.
+	Also useful in combination with horizontal split screen, to copy from above
+
