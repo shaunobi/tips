@@ -131,3 +131,6 @@ To easily copy text, use ex mode. Start with `set number`
 	Very useful when re-arranging lists, editing code, etc.
 	Also useful in combination with horizontal split screen, to copy from above
 
+I'm using minpac. To refresh all plugins, use `:call minpac#update()`
+
+
