@@ -1,4 +1,13 @@
 Sometimes an app will freeze within a window
 	Use `ctrl-a :kill` to, uh, unfreeze it :)
 
+Use `ctrl-a |` to split screen vertically
+	Use `ctrl-a S` to split screen horizontally
+	Use `ctrl-a TAB` to move between panes
+	If new pane is blank, use `ctrl-a c` to create a new window
+	You can also `ctrl-a [1-0]` to switch that pane to an existing window
+	You can switch between panes using `ctrl-a ctrl-a` as well
+	Use `ctrl-a X` to close current pane
 
+You can detach screen from the TTY without kill it with `ctrl-a X`
+	You can reattach with `screen -r`
