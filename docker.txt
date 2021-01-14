@@ -1,0 +1,18 @@
+Use the FROM instruction to base your docker build on a specific image
+	For example: FROM ubuntu:20.04
+
+Use the RUN instruction to create layers on top of the base image
+	Note that this executes when the image is being built
+
+Use the EXPOSE command to expose ports
+	Need to pair this with a command line option as well [not sure why]
+
+Use the CMD instruction to run something when container is launched
+	The RUN instruction executes when the container is building
+	This works similarly to: `sudo docker run -it container /bin/true`
+	Note that a command line `run` command override a CMD instruction
+
+To list out images on local machine, `sudo docker images`
+
+To list out running containers, `sudo docker ps`
+
