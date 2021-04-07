@@ -12,7 +12,13 @@ Use the CMD instruction to run something when container is launched
 	This works similarly to: `sudo docker run -it container /bin/true`
 	Note that a command line `run` command override a CMD instruction
 
-To list out images on local machine, `sudo docker images`
+To NOT have to use `sudo docker ...`, add your user to the docker group:
+	`sudo groupadd docker`
+	`sudo usermod -aG docker $USER`
 
-To list out running containers, `sudo docker ps`
+To list out images on local machine, `docker images`
 
+To list out running containers, `docker ps`
+	Use `docker ps -a` to show all containers, including stopped
+
+Use `docker start container-name` and ` docker stop container-name` to start and stop
